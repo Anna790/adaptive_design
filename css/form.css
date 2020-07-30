@@ -1,0 +1,112 @@
+body {
+    background: url(../images/bay.png) center/cover no-repeat;
+    font-family: "Google Sans", Arial, Helvetica, sans-serif;
+}
+h2 {
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 35px;
+}
+.mainWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    min-width: 260px;
+    border: 1px solid black;
+    -webkit-box-shadow: -4px -2px 12px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px -2px 12px 0px rgba(0,0,0,0.75);
+    box-shadow: -4px -2px 12px 0px rgba(0,0,0,0.75);
+    width: 80%;
+    color: white;
+    padding: 40px 20px;
+}
+.row {
+    display: flex;
+}
+/* -- Hack to preserve validation --*/
+label {
+    display: none;
+}
+.label {
+   min-width: 150px;
+   text-align: left;
+   font-size: 12px;
+}
+.input {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 5px 5px 5px;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    border: 0;
+}
+.containerInfo {
+    display: block;
+    box-sizing: border-box;
+    margin: 20px;
+}
+.form {
+   margin: 20px;
+}
+.message {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+}
+ #multiSelect {
+     border: 0;
+     border-radius: 0;
+     padding: 10px;
+     line-height: 1;
+     width: 100%;
+     -webkit-appearance: none;
+     height: 37px;
+ }
+ .button {
+     padding: 15px;
+     background: transparent;
+     border: 2px solid white;
+     color: white;
+     font-size: 17px;
+     font-weight: bolder;
+ }
+ .button:hover {
+     background-color: white;
+     color: gray;
+ }
+.buttonWrapper {
+    padding: 40px 0 0 150px;
+    margin-top: 40px;
+    border-top: 2px solid white;
+}
+@media screen and (max-width: 768px) {
+        .row {
+            flex-wrap: wrap;
+        }
+        .mainWrapper {
+            height: auto;
+        }
+        .buttonWrapper {
+            padding-left: 0;
+        }
+        .form {
+            margin: 0;
+        }
+        .container {
+            padding: 10px 20px;
+        }
+        .input {
+            margin-bottom: 10px;
+        }
+        .label {
+            text-align: center;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+}

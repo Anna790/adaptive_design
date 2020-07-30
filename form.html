@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <div class="mainWrapper">
+        <div class="container">
+            <div class="containerInfo">
+                <h2>Contact form</h2>
+                <p>Please fill in your information and we'll be sending your order.</p>
+            </div>
+            <div class="form">
+                <form>
+                    <div class="row">
+                        <div class="label">Your name</div>
+                        <div class="input">
+                            <label for="firstName">First Name</label>
+                            <input type="text" name="full_name[0]" placeholder="first name" id="firstName" class="lines">
+                        </div>
+                        <div class="input">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="full_name[1]" placeholder="last name" id="lastName" class="lines">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label">Your email</div>
+                        <div class="input">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" placeholder="your_mail@mail.com" class="lines">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label">Phone<sup>*</sup></div>
+                        <div class="input">
+                            <label for="phoneNumFirst">Country code</label>
+                            <input type="text" name="phone_number[0]" id="phoneNumFirst" placeholder="000" class="lines">
+                        </div>
+                        <div class="input">
+                            <label for="phoneNumSecond">Phone body #1</label>
+                            <input type="text" name="phone_number[1]" id="phoneNumSecond" placeholder="000" class="lines">
+                        </div>
+                        <div class="input">
+                            <label for="phoneNumThird">Phone body #2</label>
+                            <input type="text" name="phone_number[2]" id="phoneNumThird" placeholder="0000" class="lines">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label">Message subject<sup>*</sup></div>
+                        <div class="input">
+                            <label for="multiSelect">Subject</label>
+                            <select name="Other" id="multiSelect">
+                                <option value="" disabled selected>Other</option>
+                                <option value="">Option1</option>
+                                <option value="">Option2</option>
+                                <option value="">Option3</option>
+                                <option value="">Option4</option>
+                                <option value="">Option5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label">Message<sup>*</sup></div>
+                        <div class="input">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="8" class="message"></textarea>
+                        </div>
+                    </div>
+                    <div class="buttonWrapper"><input type="submit" class="button" value="SUBMIT FORM"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

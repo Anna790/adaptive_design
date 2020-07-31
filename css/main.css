@@ -2,27 +2,26 @@
 
 .main-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .task {
-    padding: 10px;
-    margin: 0 20px;
+    padding: 20px;
+    margin: 20px;
     background: #2196f3;
+    width: 280px;
 }
 .taskImg {
     width: 100%;
     border: 2px solid white;
-    padding: 5px;
 }
-div.container
-{
+div.container {
     font-family: Raleway;
     margin: 0 auto;
-    padding: 10em 3em;
+    padding: 3em;
     text-align: center;
 }
-div.container a
-{
+div.container a {
     color: #FFF;
     text-decoration: none;
     font: 20px Raleway;
@@ -32,11 +31,8 @@ div.container a
     z-index: 0;
     cursor: pointer;
 }
-
-
 /* Circle behind */
-div.circleBehind a:before, div.circleBehind a:after
-{
+div.circleBehind a:before, div.circleBehind a:after {
     position: absolute;
     top: 22px;
     left: 50%;
@@ -51,21 +47,15 @@ div.circleBehind a:before, div.circleBehind a:after
     transition: all 0.3s;
     z-index: -1;
 }
-
-div.circleBehind a:after
-{
+div.circleBehind a:after {
     border-width: 2px;
     transition: all 0.4s;
 }
-
-div.circleBehind a:hover:before
-{
+div.circleBehind a:hover:before {
     opacity: 1;
     transform: translateX(-50%) translateY(-50%) scale(1);
 }
-
-div.circleBehind a:hover:after
-{
+div.circleBehind a:hover:after {
     opacity: 1;
     transform: translateX(-50%) translateY(-50%) scale(1.3);
 }

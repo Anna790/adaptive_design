@@ -1,0 +1,70 @@
+.flexContainer {
+    display: flex;
+    justify-content: center;
+}
+.form {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.card {
+    width: 280px;
+    height: 150px;
+    color: white;
+    margin: 15px;
+    border-radius: 5%;
+}
+.red {
+    background-color: red;
+    background-image: linear-gradient(-90deg, red, palevioletred);
+}
+.blue {
+    background-color: dodgerblue;
+    background-image: linear-gradient(-90deg, dodgerblue, lightskyblue);
+}
+.green {
+    background-color: yellowgreen;
+    background-image: linear-gradient(-90deg, green, greenyellow);
+}
+i {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    opacity: .5;
+}
+.top-circle {
+    bottom: 0;
+    right: 0;
+    transform: translate(10%, 60%);
+}
+.bottom-circle {
+    top: 0;
+    right: 0;
+    transform: translate(60%, -10%);
+}
+.circle-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-left: 5px;
+}
+h1 {
+    padding: 20px 0 30px 0;
+    font-size: 25px;
+}
+p{
+    font-size: 15px;
+}
+@media screen and (max-width: 768px) {
+    .flexContainer {
+        flex-wrap: wrap;
+    }
+}
